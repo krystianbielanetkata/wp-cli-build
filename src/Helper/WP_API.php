@@ -21,7 +21,8 @@ class WP_API {
 			$response = Requests::post(
 				'http://api.wordpress.org/plugins/info/1.0/' . $slug . '.json',
 				[],
-				[ 'action' => 'plugin_information' ]
+				[ 'action' => 'plugin_information' ],
+				[ 'timeout' => 30, 'connect_timeout' => 30 ]
 			);
 			if ( ! empty( $response->body ) ) {
 				$plugin = json_decode( $response->body );

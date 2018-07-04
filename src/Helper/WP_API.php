@@ -22,7 +22,7 @@ class WP_API {
 				'http://api.wordpress.org/plugins/info/1.0/' . $slug . '.json',
 				[],
 				[ 'action' => 'plugin_information' ],
-				[ 'timeout' => 30, 'connect_timeout' => 30 ]
+				[ 'timeout' => 120, 'connect_timeout' => 120 ]
 			);
 			if ( ! empty( $response->body ) ) {
 				$plugin = json_decode( $response->body );

@@ -1,8 +1,8 @@
 {
-  "name": "front/wp-cli-build",
+  "name": "krystianbielanetkata/wp-cli-build",
   "description": "Fetch specific versions of plugins/themes from wordpress.org using a build file",
   "type": "wp-cli-package",
-  "homepage": "https://github.com/front/wp-cli-build",
+  "homepage": "https://github.com/krystianbielanetkata/wp-cli-build",
   "license": "MIT",
   "authors": [
     {
